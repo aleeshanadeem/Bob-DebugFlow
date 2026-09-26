@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bob DebugFlow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">B</div>
+
+                <div>
+                    <h2>Bob DebugFlow</h2>
+                    <span>AI Developer Workflow</span>
+                </div>
+            </div>
+
+            <nav class="navigation">
+
+                <a href="#overview" class="nav-item active">
+                    <span>◈</span>
+                    Overview
+                </a>
+
+                <a href="#workflow" class="nav-item">
+                    <span>⌁</span>
+                    DebugFlow
+                </a>
+
+                <a href="#bugs" class="nav-item">
+                    <span>◇</span>
+                    Bug Findings
+                </a>
+
+                <a href="#review" class="nav-item">
+                    <span>✓</span>
+                    Code Review
+                </a>
+
+                <a href="#reports" class="nav-item">
+                    <span>▤</span>
+                    Reports
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="bob-status">
+                    <span class="status-dot"></span>
+
+                    <div>
+                        <strong>Bob 2.0</strong>
+                        <small>Workflow Active</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOP BAR -->
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">AI-ASSISTED DEVELOPMENT</p>
+                    <h1>Debugging Command Center</h1>
+                </div>
+
+                <div class="top-actions">
+
+                    <span class="live-badge">
+                        <span></span>
+                        LIVE SESSION
+                    </span>
+
+                    <button class="primary-button" onclick="startDemo()">
+                        ▶ Start DebugFlow
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- HERO -->
+            <section class="hero" id="overview">
+
+                <div class="hero-content">
+
+                    <span class="hero-label">
+                        IBM BOB 2.0
+                    </span>
+
+                    <h2>
+                        From <span>Bug</span> to
+                        <span>Verified Fix</span>
+                    </h2>
+
+                    <p>
+                        A structured AI-assisted workflow for investigation,
+                        fixing, testing, code review, and documentation.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <button class="primary-button" onclick="scrollToWorkflow()">
+                            Explore Workflow
+                        </button>
+
+                        <button class="secondary-button" onclick="showReport()">
+                            View Reports
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-orbit">
+
+                    <div class="orbit-ring ring-one"></div>
+                    <div class="orbit-ring ring-two"></div>
+
+                    <div class="orbit-core">
+                        <strong>BOB</strong>
+                        <span>AI AGENT</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- METRICS -->
+            <section class="metrics-grid">
+
+                <div class="metric-card">
+                    <div class="metric-top">
+                        <span>Bugs Fixed</span>
+                        <span class="metric-icon">◇</span>
+                    </div>
+
+                    <strong>6 / 6</strong>
+                    <small>100% verified</small>
+                </div>
+
+
+                <div class="metric-card">
+                    <div class="metric-top">
+                        <span>Tests Passing</span>
+                        <span class="metric-icon">✓</span>
+                    </div>
+
+                    <strong>17 / 17</strong>
+                    <small>100% pass rate</small>
+                </div>
+
+
+                <div class="metric-card">
+                    <div class="metric-top">
+                        <span>Coverage</span>
+                        <span class="metric-icon">◉</span>
+                    </div>
+
+                    <strong>86%</strong>
+                    <small>After verification</small>
+                </div>
+
+
+                <div class="metric-card">
+                    <div class="metric-top">
+                        <span>Approval Gates</span>
+                        <span class="metric-icon">◆</span>
+                    </div>
+
+                    <strong>4 / 4</strong>
+                    <small>Developer approved</small>
+                </div>
+
+            </section>
+
+
+            <!-- WORKFLOW -->
+            <section class="section" id="workflow">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">ORCHESTRATED PROCESS</p>
+                        <h2>DebugFlow Pipeline</h2>
+                    </div>
+
+                    <span class="completed-badge">
+                        ● Workflow Complete
+                    </span>
+
+                </div>
+
+
+                <div class="workflow">
+
+                    <div class="workflow-step completed">
+                        <div class="step-number">01</div>
+                        <div>
+                            <strong>Codebase Analysis</strong>
+                            <small>Understand project structure</small>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step completed">
+                        <div class="step-number">02</div>
+                        <div>
+                            <strong>Root Cause Analysis</strong>
+                            <small>Identify defective logic</small>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step completed parallel">
+                        <div class="step-number">03</div>
+                        <div>
+                            <strong>Parallel Investigation</strong>
+                            <small>Multiple Bob subagents investigate</small>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step approved">
+                        <div class="step-number">04</div>
+                        <div>
+                            <strong>Developer Approval</strong>
+                            <small>Human-in-the-loop checkpoint</small>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step completed">
+                        <div class="step-number">05</div>
+                        <div>
+                            <strong>Fix Implementation</strong>
+                            <small>Apply focused corrections</small>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step completed">
+                        <div class="step-number">06</div>
+                        <div>
+                            <strong>Testing</strong>
+                            <small>Run automated tests</small>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step approved">
+                        <div class="step-number">07</div>
+                        <div>
+                            <strong>Verification</strong>
+                            <small>Confirm fixes and prevent regression</small>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step completed">
+                        <div class="step-number">08</div>
+                        <div>
+                            <strong>Code Review</strong>
+                            <small>Structured quality review</small>
+                        </div>
+                    </div>
+
+
+                    <div class="workflow-line"></div>
+
+
+                    <div class="workflow-step completed">
+                        <div class="step-number">09</div>
+                        <div>
+                            <strong>Debug Report</strong>
+                            <small>Document findings and results</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BUG FINDINGS -->
+            <section class="section" id="bugs">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">ROOT CAUSE ANALYSIS</p>
+                        <h2>Bug Findings</h2>
+                    </div>
+
+                    <span class="result-count">
+                        6 identified
+                    </span>
+
+                </div>
+
+
+                <div class="bug-grid">
+
+                    <div class="bug-card">
+                        <div class="bug-id">B1</div>
+                        <div>
+                            <strong>Incorrect HTTP Status</strong>
+                            <p>User creation returned 200 instead of 201.</p>
+                        </div>
+                        <span class="fixed">FIXED</span>
+                    </div>
+
+
+                    <div class="bug-card">
+                        <div class="bug-id">B2</div>
+                        <div>
+                            <strong>Email Validation</strong>
+                            <p>Invalid email values were accepted.</p>
+                        </div>
+                        <span class="fixed">FIXED</span>
+                    </div>
+
+
+                    <div class="bug-card">
+                        <div class="bug-id">B3</div>
+                        <div>
+                            <strong>Description Filtering</strong>
+                            <p>Empty filter applied incorrect database logic.</p>
+                        </div>
+                        <span class="fixed">FIXED</span>
+                    </div>
+
+
+                    <div class="bug-card">
+                        <div class="bug-id">B4</div>
+                        <div>
+                            <strong>Missing 404 Handling</strong>
+                            <p>Missing items produced a KeyError.</p>
+                        </div>
+                        <span class="fixed">FIXED</span>
+                    </div>
+
+
+                    <div class="bug-card">
+                        <div class="bug-id">B5</div>
+                        <div>
+                            <strong>Price Rounding</strong>
+                            <p>Price rounding calculation was incorrect.</p>
+                        </div>
+                        <span class="fixed">FIXED</span>
+                    </div>
+
+
+                    <div class="bug-card">
+                        <div class="bug-id">B6</div>
+                        <div>
+                            <strong>Database Session</strong>
+                            <p>Error path could leak database resources.</p>
+                        </div>
+                        <span class="fixed">FIXED</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BEFORE / AFTER -->
+            <section class="section comparison">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">VERIFICATION</p>
+                        <h2>Before vs After</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="comparison-grid">
+
+                    <div class="comparison-card">
+
+                        <span class="comparison-label">BEFORE DEBUGFLOW</span>
+
+                        <div class="comparison-number">
+                            59%
+                        </div>
+
+                        <p>Test pass rate</p>
+
+                        <div class="comparison-detail">
+                            <span>✓ Passed</span>
+                            <strong>10</strong>
+                        </div>
+
+                        <div class="comparison-detail">
+                            <span>✕ Failed</span>
+                            <strong>7</strong>
+                        </div>
+
+                        <div class="comparison-detail">
+                            <span>Lint Issues</span>
+                            <strong>1</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+
+                    <div class="comparison-card after">
+
+                        <span class="comparison-label">AFTER DEBUGFLOW</span>
+
+                        <div class="comparison-number">
+                            100%
+                        </div>
+
+                        <p>Test pass rate</p>
+
+                        <div class="comparison-detail">
+                            <span>✓ Passed</span>
+                            <strong>17</strong>
+                        </div>
+
+                        <div class="comparison-detail">
+                            <span>✕ Failed</span>
+                            <strong>0</strong>
+                        </div>
+
+                        <div class="comparison-detail">
+                            <span>Lint Issues</span>
+                            <strong>0</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CODE REVIEW -->
+            <section class="section" id="review">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">QUALITY CONTROL</p>
+                        <h2>Code Review</h2>
+                    </div>
+
+                    <span class="review-status">
+                        APPROVED WITH WARNINGS
+                    </span>
+
+                </div>
+
+
+                <div class="review-grid">
+
+                    <div class="review-card critical">
+                        <strong>0</strong>
+                        <span>Critical</span>
+                    </div>
+
+                    <div class="review-card warning">
+                        <strong>7</strong>
+                        <span>Warnings</span>
+                    </div>
+
+                    <div class="review-card positive">
+                        <strong>14</strong>
+                        <span>Positive Findings</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PRODUCTIVITY -->
+            <section class="section productivity">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">PRODUCTIVITY MEASUREMENT</p>
+                        <h2>Debugging Time</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="productivity-grid">
+
+                    <div>
+                        <span>Estimated Manual Debugging</span>
+                        <strong>45 min</strong>
+                    </div>
+
+                    <div>
+                        <span>DebugFlow Session</span>
+                        <strong>12 min</strong>
+                    </div>
+
+                    <div>
+                        <span>Estimated Time Saved</span>
+                        <strong>33 min</strong>
+                    </div>
+
+                </div>
+
+                <p class="disclaimer">
+                    * Demonstration estimates, not a scientific benchmark.
+                </p>
+
+            </section>
+
+
+            <!-- REPORTS -->
+            <section class="section" id="reports">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">TRACEABLE OUTPUT</p>
+                        <h2>Reports & Evidence</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="reports-grid">
+
+                    <button class="report-card" onclick="openReport('debug_report.md')">
+                        <span>▤</span>
+                        <strong>Debug Report</strong>
+                        <small>Complete debugging findings</small>
+                    </button>
+
+
+                    <button class="report-card" onclick="openReport('metrics.json')">
+                        <span>◉</span>
+                        <strong>Metrics</strong>
+                        <small>Productivity measurements</small>
+                    </button>
+
+
+                    <button class="report-card" onclick="openReport('code_review_findings.md')">
+                        <span>✓</span>
+                        <strong>Code Review</strong>
+                        <small>Structured review findings</small>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer>
+
+                <div>
+                    <strong>Bob DebugFlow</strong>
+                    <span>AI-Assisted Developer Workflow</span>
+                </div>
+
+                <div>
+                    Built with IBM Bob 2.0
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <div id="toast" class="toast">
+        DebugFlow session started.
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
