@@ -1,0 +1,10 @@
+[flake8]
+max-line-length = 100
+exclude =
+    .git,
+    __pycache__,
+    .bob,
+    reports
+# E501 is still reported for lines over 100 chars
+# W503 is ignored (line break before binary operator — style preference)
+ignore = W503

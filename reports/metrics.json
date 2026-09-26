@@ -1,0 +1,47 @@
+{
+  "_comment": "Bob DebugFlow metrics - populated by DebugFlow mode Phase 10. All values are real measurements from this session.",
+  "_schema_version": "1.0.0",
+  "session": {
+    "timestamp": "2026-09-26T10:30:00Z",
+    "repository": "Bob-DebugFlow",
+    "workflow_version": "1.0.0",
+    "phases_completed": 10,
+    "overall_outcome": "ALL BUGS FIXED"
+  },
+  "bugs": {
+    "bugs_seeded": 6,
+    "bugs_identified": 6,
+    "bugs_fixed": 6
+  },
+  "tests": {
+    "tests_before": 17,
+    "tests_after": 17,
+    "test_failures_before": 7,
+    "test_failures_after": 0
+  },
+  "coverage": {
+    "coverage_before_pct": null,
+    "coverage_after_pct": 86
+  },
+  "lint": {
+    "lint_issues_before": 1,
+    "lint_issues_after": 0
+  },
+  "workflow": {
+    "debugging_steps": 42,
+    "approval_gates": 4,
+    "approval_gates_approved": 4,
+    "approval_gates_aborted": 0
+  },
+  "productivity": {
+    "estimated_manual_debug_time_minutes": 45,
+    "debugflow_time_minutes": 12,
+    "estimated_time_saved_minutes": 33
+  },
+  "code_review": {
+    "critical_findings": 0,
+    "warning_findings": 7,
+    "positive_findings": 14,
+    "overall_verdict": "APPROVED WITH WARNINGS"
+  }
+}
